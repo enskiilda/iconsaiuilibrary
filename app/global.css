@@ -1,0 +1,268 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+
+:root {
+  --fd-background: 255 255 255 !important;
+  --fd-foreground: 0 0 0 !important;
+  --fd-card: 255 255 255 !important;
+  --fd-card-foreground: 0 0 0 !important;
+  --fd-popover: 255 255 255 !important;
+  --fd-popover-foreground: 0 0 0 !important;
+  --fd-primary: 0 0 0 !important;
+  --fd-primary-foreground: 255 255 255 !important;
+  --fd-secondary: 250 250 250 !important;
+  --fd-secondary-foreground: 0 0 0 !important;
+  --fd-muted: 250 250 250 !important;
+  --fd-muted-foreground: 115 115 115 !important;
+  --fd-accent: 250 250 250 !important;
+  --fd-accent-foreground: 0 0 0 !important;
+  --fd-border: 229 229 229 !important;
+  --fd-ring: 0 0 0 !important;
+  --border: 229 229 229;
+  --muted: 250 250 250;
+  --muted-foreground: 115 115 115;
+  --primary: 0 0 0;
+  --primary-foreground: 255 255 255;
+  --accent: 250 250 250;
+  --accent-foreground: 0 0 0;
+}
+
+:root body,
+:root #nd-docs-layout,
+:root #nd-sidebar,
+:root aside,
+:root nav,
+:root main {
+  background-color: rgb(255 255 255) !important;
+}
+
+:root .fd-bg-fd-background,
+:root [class*="bg-fd-background"] {
+  background-color: rgb(255 255 255) !important;
+}
+
+:root .fd-bg-fd-card,
+:root [class*="bg-fd-card"] {
+  background-color: rgb(255 255 255) !important;
+}
+
+:root .fd-bg-fd-muted,
+:root [class*="bg-fd-muted"] {
+  background-color: rgb(250 250 250) !important;
+}
+
+html:not(.dark) body {
+  background-color: #ffffff !important;
+}
+
+html:not(.dark) #nd-docs-layout {
+  background-color: #ffffff !important;
+}
+
+html:not(.dark) #nd-sidebar {
+  background-color: #ffffff !important;
+}
+
+html:not(.dark) aside {
+  background-color: #ffffff !important;
+}
+
+html:not(.dark) [data-radix-scroll-area-viewport] {
+  background-color: #ffffff !important;
+}
+
+html:not(.dark) .bg-fd-background {
+  background-color: #ffffff !important;
+}
+
+html:not(.dark) .bg-fd-card {
+  background-color: #ffffff !important;
+}
+
+html:not(.dark) .bg-fd-secondary {
+  background-color: #fafafa !important;
+}
+
+html:not(.dark) .bg-fd-muted {
+  background-color: #fafafa !important;
+}
+
+html:not(.dark) * {
+  --fd-background: 255 255 255;
+  --fd-card: 255 255 255;
+  --fd-secondary: 250 250 250;
+  --fd-muted: 250 250 250;
+}
+
+html:not(.dark) #nd-docs-layout > aside,
+html:not(.dark) #nd-docs-layout > aside > div,
+html:not(.dark) #nd-docs-layout > aside > div > div,
+html:not(.dark) #nd-docs-layout > nav,
+html:not(.dark) [id^="nd-"] {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+}
+
+.group\/composer {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+:root .group\/composer > div {
+  background-color: white;
+  border-color: rgb(229 231 235);
+}
+
+:root .group\/composer button[type="submit"] {
+  background-color: black;
+  color: white;
+}
+
+:root .group\/composer button[type="submit"]:hover {
+  background-color: rgb(38 38 38);
+}
+
+:root .group\/composer button[type="button"]:hover {
+  background-color: rgb(243 244 246);
+}
+
+:root .group\/composer .text-muted-foreground {
+  color: rgb(107 114 128);
+}
+
+#nd-sidebar button[aria-label="Collapse Sidebar"] svg,
+button[aria-label="Open Sidebar"] svg {
+  display: none;
+}
+
+#nd-sidebar button[aria-label="Collapse Sidebar"],
+button[aria-label="Open Sidebar"] {
+  position: relative;
+}
+
+#nd-sidebar button[aria-label="Collapse Sidebar"]::before,
+button[aria-label="Open Sidebar"]::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: currentColor;
+  mask-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='currentColor' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 5.4541C8 5.42548 8.00155 5.39716 8.00391 5.36914C7.55522 5.37527 7.18036 5.38745 6.85449 5.41406C6.32513 5.45732 5.99243 5.53344 5.74121 5.6416L5.6377 5.69043C5.14381 5.94215 4.73058 6.32494 4.44238 6.79492L4.32715 7.00098C4.19296 7.26434 4.10023 7.61261 4.05078 8.21777C4.00041 8.83458 4 9.62723 4 10.7637V13.2363C4 14.3728 4.00039 15.1654 4.05078 15.7822C4.10023 16.3871 4.19298 16.7347 4.32715 16.998L4.44238 17.2041C4.73056 17.6741 5.14377 18.0568 5.6377 18.3086L5.74121 18.3574C5.99244 18.4656 6.32506 18.5417 6.85449 18.585C7.17941 18.6115 7.55304 18.6228 8 18.6289V5.4541ZM22 13.2363C22 14.3396 22.001 15.2273 21.9424 15.9443C21.8903 16.5821 21.7876 17.1524 21.5605 17.6816L21.4551 17.9063C20.9758 18.8468 20.211 19.6115 19.2705 20.0908C18.6783 20.3925 18.0373 20.5186 17.3086 20.5781C16.5914 20.6367 15.7032 20.6357 14.5996 20.6357H9.40039C9.27572 20.6357 9.15341 20.6339 9.03418 20.6338C9.02282 20.6342 9.01146 20.6357 9 20.6357C8.98557 20.6357 8.97131 20.6334 8.95703 20.6328C8.05556 20.632 7.31 20.6287 6.69141 20.5781C6.05356 20.526 5.48347 20.4235 4.9541 20.1963L4.73047 20.0908C3.84834 19.6413 3.12017 18.9412 2.6377 18.0801L2.54492 17.9063C2.24315 17.3139 2.11717 16.6732 2.05762 15.9443C1.99905 15.2273 2 14.3396 2 13.2363V10.7637C2 9.66008 1.99903 8.77186 2.05762 8.05469C2.11716 7.32598 2.24327 6.68595 2.54492 6.09375L2.6377 5.91895C3.12017 5.05789 3.8484 4.35763 4.73047 3.9082L4.9541 3.80274C5.48344 3.57561 6.05359 3.47301 6.69141 3.4209C7.40857 3.36231 8.29681 3.36328 9.40039 3.36328H14.5996C15.7032 3.36328 16.5914 3.36231 17.3086 3.4209C18.0373 3.48044 18.6773 3.60656 19.2695 3.9082L19.4443 4.00195C20.3052 4.48442 21.0057 5.21184 21.4551 6.09375L21.5605 6.31738C21.7877 6.84672 21.8903 7.41688 21.9424 8.05469C22.001 8.77186 22 9.66008 22 10.7637V13.2363ZM10 18.6357H14.5996C15.7361 18.6357 16.5287 18.6353 17.1455 18.585C17.7507 18.5355 18.0989 18.4428 18.3623 18.3086L18.5684 18.1934C19.0383 17.9051 19.4211 17.492 19.6729 16.998L19.7217 16.8945C19.8298 16.6434 19.906 16.3112 19.9492 15.7822C19.9996 15.1654 20 14.3728 20 13.2363V10.7637C20 9.62722 19.9996 8.83458 19.9492 8.21777C19.906 7.68841 19.8299 7.35572 19.7217 7.10449L19.6729 7.00098C19.4211 6.50707 19.0383 6.09385 18.5684 5.80567L18.3623 5.69043C18.0989 5.55623 17.7507 5.46351 17.1455 5.41406C16.5287 5.36369 15.736 5.36328 14.5996 5.36328H9.99609C9.99879 5.39319 10 5.42349 10 5.4541V18.6357Z' fill='currentColor'/%3E%3C/svg%3E");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='currentColor' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 5.4541C8 5.42548 8.00155 5.39716 8.00391 5.36914C7.55522 5.37527 7.18036 5.38745 6.85449 5.41406C6.32513 5.45732 5.99243 5.53344 5.74121 5.6416L5.6377 5.69043C5.14381 5.94215 4.73058 6.32494 4.44238 6.79492L4.32715 7.00098C4.19296 7.26434 4.10023 7.61261 4.05078 8.21777C4.00041 8.83458 4 9.62723 4 10.7637V13.2363C4 14.3728 4.00039 15.1654 4.05078 15.7822C4.10023 16.3871 4.19298 16.7347 4.32715 16.998L4.44238 17.2041C4.73056 17.6741 5.14377 18.0568 5.6377 18.3086L5.74121 18.3574C5.99244 18.4656 6.32506 18.5417 6.85449 18.585C7.17941 18.6115 7.55304 18.6228 8 18.6289V5.4541ZM22 13.2363C22 14.3396 22.001 15.2273 21.9424 15.9443C21.8903 16.5821 21.7876 17.1524 21.5605 17.6816L21.4551 17.9063C20.9758 18.8468 20.211 19.6115 19.2705 20.0908C18.6783 20.3925 18.0373 20.5186 17.3086 20.5781C16.5914 20.6367 15.7032 20.6357 14.5996 20.6357H9.40039C9.27572 20.6357 9.15341 20.6339 9.03418 20.6338C9.02282 20.6342 9.01146 20.6357 9 20.6357C8.98557 20.6357 8.97131 20.6334 8.95703 20.6328C8.05556 20.632 7.31 20.6287 6.69141 20.5781C6.05356 20.526 5.48347 20.4235 4.9541 20.1963L4.73047 20.0908C3.84834 19.6413 3.12017 18.9412 2.6377 18.0801L2.54492 17.9063C2.24315 17.3139 2.11717 16.6732 2.05762 15.9443C1.99905 15.2273 2 14.3396 2 13.2363V10.7637C2 9.66008 1.99903 8.77186 2.05762 8.05469C2.11716 7.32598 2.24327 6.68595 2.54492 6.09375L2.6377 5.91895C3.12017 5.05789 3.8484 4.35763 4.73047 3.9082L4.9541 3.80274C5.48344 3.57561 6.05359 3.47301 6.69141 3.4209C7.40857 3.36231 8.29681 3.36328 9.40039 3.36328H14.5996C15.7032 3.36328 16.5914 3.36231 17.3086 3.4209C18.0373 3.48044 18.6773 3.60656 19.2695 3.9082L19.4443 4.00195C20.3052 4.48442 21.0057 5.21184 21.4551 6.09375L21.5605 6.31738C21.7877 6.84672 21.8903 7.41688 21.9424 8.05469C22.001 8.77186 22 9.66008 22 10.7637V13.2363ZM10 18.6357H14.5996C15.7361 18.6357 16.5287 18.6353 17.1455 18.585C17.7507 18.5355 18.0989 18.4428 18.3623 18.3086L18.5684 18.1934C19.0383 17.9051 19.4211 17.492 19.6729 16.998L19.7217 16.8945C19.8298 16.6434 19.906 16.3112 19.9492 15.7822C19.9996 15.1654 20 14.3728 20 13.2363V10.7637C20 9.62722 19.9996 8.83458 19.9492 8.21777C19.906 7.68841 19.8299 7.35572 19.7217 7.10449L19.6729 7.00098C19.4211 6.50707 19.0383 6.09385 18.5684 5.80567L18.3623 5.69043C18.0989 5.55623 17.7507 5.46351 17.1455 5.41406C16.5287 5.36369 15.736 5.36328 14.5996 5.36328H9.99609C9.99879 5.39319 10 5.42349 10 5.4541V18.6357Z' fill='currentColor'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+#nd-sidebar-mobile {
+  left: 0 !important;
+  right: auto !important;
+  border-left: none !important;
+  border-right: 1px solid var(--fd-border) !important;
+}
+
+#nd-sidebar-mobile[data-state="open"] {
+  animation: fd-sidebar-in-left 0.2s ease-out !important;
+}
+
+#nd-sidebar-mobile[data-state="closed"] {
+  animation: fd-sidebar-out-left 0.2s ease-out !important;
+}
+
+@keyframes fd-sidebar-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fd-sidebar-out-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.user-message-bubble {
+  border-radius: 9999px !important;
+}
+
+.prose code:not(pre code) {
+  background-color: transparent;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  font-size: 0.875em;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.prose code:not(pre code)::before,
+.prose code:not(pre code)::after {
+  content: none;
+}
+
+.dark .prose code:not(pre code) {
+  background-color: transparent;
+  border-color: #4b5563;
+  color: #f3f4f6;
+}
+
+#nd-sidebar input[type="text"]:focus,
+#nd-sidebar button:focus,
+[data-search] input:focus,
+input[placeholder*="Search"]:focus,
+.fd-search input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  ring: none !important;
+  --tw-ring-shadow: none !important;
+  border-color: rgb(229 229 229) !important;
+}
+
+@media (max-width: 768px) {
+  #nd-docs-layout > nav,
+  nav.fd-flex {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+  }
+  
+  #nd-docs-layout > nav button[aria-label="Open Sidebar"],
+  button[aria-label="Open Sidebar"] {
+    order: -100 !important;
+    margin-right: 0.5rem !important;
+    margin-left: 0 !important;
+    position: relative !important;
+    left: 0 !important;
+    right: auto !important;
+  }
+  
+  #nd-docs-layout > nav > a:first-of-type {
+    order: -99 !important;
+  }
+  
+  nav button[aria-label="Open Sidebar"] {
+    order: -100 !important;
+    margin-right: 0.5rem !important;
+    margin-left: 0 !important;
+  }
+  
+  header nav,
+  [class*="navbar"],
+  #nd-docs-layout nav {
+    flex-direction: row !important;
+  }
+  
+  header nav > button:first-child,
+  [class*="navbar"] > button:first-child {
+    order: -100 !important;
+  }
+}

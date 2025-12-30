@@ -1,0 +1,313 @@
+module.exports = [
+"[project]/content/docs/index.mdx.js?collection=docs [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "_markdown",
+    ()=>_markdown,
+    "default",
+    ()=>MDXContent,
+    "extractedReferences",
+    ()=>extractedReferences,
+    "frontmatter",
+    ()=>frontmatter,
+    "structuredData",
+    ()=>structuredData,
+    "toc",
+    ()=>toc
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-runtime.js [app-rsc] (ecmascript)");
+;
+let _markdown = "Welcome to the docs! You can start writing documents in `/content/docs`.\n\n## What is Next?\n\n<Cards>\n  <Card title=\"Learn more about Next.js\" href=\"https://nextjs.org/docs\" />\n\n  <Card title=\"Learn more about Fumadocs\" href=\"https://fumadocs.dev\" />\n</Cards>\n";
+let frontmatter = {
+    "title": "Hello World",
+    "description": "Your first document"
+};
+let extractedReferences = [];
+let structuredData = {
+    "contents": [
+        {
+            "heading": undefined,
+            "content": "Welcome to the docs! You can start writing documents in /content/docs."
+        }
+    ],
+    "headings": [
+        {
+            "id": "what-is-next",
+            "content": "What is Next?"
+        }
+    ]
+};
+const toc = [
+    {
+        depth: 2,
+        url: "#what-is-next",
+        title: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+            children: "What is Next?"
+        })
+    }
+];
+function _createMdxContent(props) {
+    const _components = {
+        code: "code",
+        h2: "h2",
+        p: "p",
+        ...props.components
+    }, { Card, Cards } = _components;
+    if (!Card) _missingMdxReference("Card", true);
+    if (!Cards) _missingMdxReference("Cards", true);
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxs"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: [
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxs"])(_components.p, {
+                children: [
+                    "Welcome to the docs! You can start writing documents in ",
+                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsx"])(_components.code, {
+                        children: "/content/docs"
+                    }),
+                    "."
+                ]
+            }),
+            "\n",
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsx"])(_components.h2, {
+                id: "what-is-next",
+                children: "What is Next?"
+            }),
+            "\n",
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxs"])(Cards, {
+                children: [
+                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsx"])(Card, {
+                        title: "Learn more about Next.js",
+                        href: "https://nextjs.org/docs"
+                    }),
+                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsx"])(Card, {
+                        title: "Learn more about Fumadocs",
+                        href: "https://fumadocs.dev"
+                    })
+                ]
+            })
+        ]
+    });
+}
+function MDXContent(props = {}) {
+    const { wrapper: MDXLayout } = props.components || {};
+    return MDXLayout ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsx"])(MDXLayout, {
+        ...props,
+        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsx"])(_createMdxContent, {
+            ...props
+        })
+    }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+    throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+}),
+"[project]/components/IconsGallery.tsx [app-rsc] (client reference proxy) <module evaluation>", ((__turbopack_context__) => {
+"use strict";
+
+// This file is generated by next-core EcmascriptClientReferenceModule.
+__turbopack_context__.s([
+    "IconsGallery",
+    ()=>IconsGallery
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
+;
+const IconsGallery = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call IconsGallery() from the server but IconsGallery is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/IconsGallery.tsx <module evaluation>", "IconsGallery");
+}),
+"[project]/components/IconsGallery.tsx [app-rsc] (client reference proxy)", ((__turbopack_context__) => {
+"use strict";
+
+// This file is generated by next-core EcmascriptClientReferenceModule.
+__turbopack_context__.s([
+    "IconsGallery",
+    ()=>IconsGallery
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
+;
+const IconsGallery = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call IconsGallery() from the server but IconsGallery is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/IconsGallery.tsx", "IconsGallery");
+}),
+"[project]/components/IconsGallery.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$IconsGallery$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/components/IconsGallery.tsx [app-rsc] (client reference proxy) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$IconsGallery$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__ = __turbopack_context__.i("[project]/components/IconsGallery.tsx [app-rsc] (client reference proxy)");
+;
+__turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$IconsGallery$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__);
+}),
+"[project]/content/docs/icons.mdx.js?collection=docs [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "_markdown",
+    ()=>_markdown,
+    "default",
+    ()=>MDXContent,
+    "extractedReferences",
+    ()=>extractedReferences,
+    "frontmatter",
+    ()=>frontmatter,
+    "structuredData",
+    ()=>structuredData,
+    "toc",
+    ()=>toc
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$IconsGallery$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/IconsGallery.tsx [app-rsc] (ecmascript)");
+;
+let _markdown = "import { IconsGallery } from '@/components/IconsGallery';\n\n<IconsGallery />\n";
+let frontmatter = {
+    "title": "Icons",
+    "description": "Browse and copy SVG icons"
+};
+let extractedReferences = [];
+let structuredData = {
+    "contents": [],
+    "headings": []
+};
+;
+const toc = [];
+function _createMdxContent(props) {
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$IconsGallery$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconsGallery"], {});
+}
+function MDXContent(props = {}) {
+    const { wrapper: MDXLayout } = props.components || {};
+    return MDXLayout ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsx"])(MDXLayout, {
+        ...props,
+        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsx"])(_createMdxContent, {
+            ...props
+        })
+    }) : _createMdxContent(props);
+}
+}),
+"[externals]/fs/promises [external] (fs/promises, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("fs/promises", () => require("fs/promises"));
+
+module.exports = mod;
+}),
+"[project]/.source/index.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// @ts-nocheck -- skip type checking
+__turbopack_context__.s([
+    "docs",
+    ()=>docs
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$content$2f$docs$2f$index$2e$mdx$2e$js$3f$collection$3d$docs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/content/docs/index.mdx.js?collection=docs [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$content$2f$docs$2f$icons$2e$mdx$2e$js$3f$collection$3d$docs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/content/docs/icons.mdx.js?collection=docs [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$fumadocs$2d$mdx$2f$dist$2f$runtime$2f$next$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/fumadocs-mdx/dist/runtime/next/index.js [app-rsc] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$fumadocs$2d$mdx$2f$dist$2f$chunk$2d$KILFIBVW$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/fumadocs-mdx/dist/chunk-KILFIBVW.js [app-rsc] (ecmascript)");
+;
+;
+;
+const docs = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$fumadocs$2d$mdx$2f$dist$2f$chunk$2d$KILFIBVW$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["_runtime"].docs([
+    {
+        info: {
+            "path": "icons.mdx",
+            "fullPath": "content/docs/icons.mdx"
+        },
+        data: __TURBOPACK__imported__module__$5b$project$5d2f$content$2f$docs$2f$icons$2e$mdx$2e$js$3f$collection$3d$docs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__
+    },
+    {
+        info: {
+            "path": "index.mdx",
+            "fullPath": "content/docs/index.mdx"
+        },
+        data: __TURBOPACK__imported__module__$5b$project$5d2f$content$2f$docs$2f$index$2e$mdx$2e$js$3f$collection$3d$docs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__
+    }
+], []);
+}),
+"[project]/lib/source.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getLLMText",
+    ()=>getLLMText,
+    "getPageImage",
+    ()=>getPageImage,
+    "source",
+    ()=>source
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f2e$source$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/.source/index.ts [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$fumadocs$2d$core$2f$dist$2f$source$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/fumadocs-core/dist/source/index.js [app-rsc] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$fumadocs$2d$core$2f$dist$2f$source$2f$plugins$2f$lucide$2d$icons$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/fumadocs-core/dist/source/plugins/lucide-icons.js [app-rsc] (ecmascript)");
+;
+;
+;
+const source = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$fumadocs$2d$core$2f$dist$2f$source$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__["loader"])({
+    baseUrl: '/',
+    source: __TURBOPACK__imported__module__$5b$project$5d2f2e$source$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["docs"].toFumadocsSource(),
+    plugins: [
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$fumadocs$2d$core$2f$dist$2f$source$2f$plugins$2f$lucide$2d$icons$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["lucideIconsPlugin"])()
+    ]
+});
+function getPageImage(page) {
+    const segments = [
+        ...page.slugs,
+        'image.png'
+    ];
+    return {
+        segments,
+        url: `/og/docs/${segments.join('/')}`
+    };
+}
+async function getLLMText(page) {
+    const processed = await page.data.getText('processed');
+    return `# ${page.data.title}
+
+${processed}`;
+}
+}),
+"[project]/lib/layout.shared.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "baseOptions",
+    ()=>baseOptions
+]);
+function baseOptions() {
+    return {
+        nav: {
+            title: 'My App',
+            enabled: true
+        }
+    };
+}
+}),
+"[project]/app/[[...slug]]/layout.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Layout
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$source$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/source.ts [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$fumadocs$2d$ui$2f$dist$2f$layouts$2f$docs$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/fumadocs-ui/dist/layouts/docs/index.js [app-rsc] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$layout$2e$shared$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/layout.shared.tsx [app-rsc] (ecmascript)");
+;
+;
+;
+;
+function Layout({ children }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$fumadocs$2d$ui$2f$dist$2f$layouts$2f$docs$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DocsLayout"], {
+        tree: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$source$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["source"].pageTree,
+        ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$layout$2e$shared$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["baseOptions"])(),
+        sidebar: {
+            enabled: true,
+            collapsible: true
+        },
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/app/[[...slug]]/layout.tsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, this);
+}
+}),
+];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__83186404._.js.map
